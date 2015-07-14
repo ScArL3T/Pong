@@ -1,0 +1,22 @@
+#ifndef SCORE_H
+#define SCORE_H
+
+#include <iostream>
+#include <SFML/Graphics.hpp>
+
+class Score
+{
+public:
+	Score();
+	~Score();
+
+	void Update();
+	void Increment();
+	void Draw(sf::RenderWindow &window);
+	sf::Text score;
+private:
+	int      count;
+	int      offsetX, offsetY;
+};
+
+#endif
